@@ -28,6 +28,14 @@ Please read the [Guardfile DSL documentation](https://github.com/guard/guard#rea
 
 Guard::Yard automatically detects changes in your app, lib and ext directories, but you can have it monitor additional files using the Guardfile DSL.
 
+Also note that you may want to ignore the files changed by yard, otherwise guard may output the files and
+directories that are being watched/changed.
+
+```
+ignore(%r{^doc/})
+ignore(%r{^\.yardoc/})
+```
+
 Guard::Yard also provides some basic options for doc generation and running the YARD server.
 
     guard 'yard', :port => '8808' do
