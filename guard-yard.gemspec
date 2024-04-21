@@ -12,8 +12,8 @@ Gem::Specification.new do |s|
 
   s.rubyforge_project = 'guard-yard'
   s.required_ruby_version = '>= 1.9.2'
-  s.add_dependency 'guard', '>= 1.1.0'
-  s.add_dependency 'yard', '>= 0.7.0'
+  s.add_dependency 'guard', '>= 2.18.1'
+  s.add_dependency 'yard', '>= 0.9.36'
   s.add_development_dependency 'rake'
   s.add_development_dependency 'rubocop', '= 0.51'
 
